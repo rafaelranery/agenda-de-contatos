@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="public/phone-icon.png" alt="ícone telefone">
+            <h1>Agenda de Contatos</h1>
+            <img id="help-icon" src="public/help-circle-outline-svgrepo-com.svg" alt="ícone de ajuda">
+        </header>
+
+        <form action="">
+            <label for="name-contact">
+                <p>Nome:</p> 
+                <input type="text" name="name-contact" placeholder="Nome..." id="name-input">
+            </label>
+            <label for="tel-number">
+                <p>Telefone:</p> 
+                <input type="tel" name="tel-number" placeholder="(XX) 9999-9999..." id="tel-input">
+            </label>
+            <button type="submit">Adicionar +</button>
+            <span id="error-msg"></span>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <td>Nome</td>
+                    <td>Telefone</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
